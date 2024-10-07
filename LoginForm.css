@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body{
+      width: 100%;
+      height: 100vh;
+      overflow-x:hidden ;
+      font-family: "Inter", sans-serif;
+      /* background-color: red; */
+}
+
+.containr{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      background-color:#0D0D28;
+}
+
+.form-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+}
+
+.form-container form{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      height: 70%;
+      width: 30%;
+      /* background-color:     red; */
+}
+
+.form-container form h2{
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #fff;
+      font-weight: 600;
+      margin-top: 2rem;
+      /* text-transform: uppercase; */
+      letter-spacing: 2px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      ;
+}
+/* From Uiverse.io by kamehame-ha */ 
+.coolinput {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      /* height: 20%; */
+      position: static;
+      color: #fff;
+    }
+    .form-group{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1vw;
+      margin-bottom: 1rem;
+    }
+
+    .coolinput label.text {
+      font-size: 1.5rem;
+      font-size: 0.75rem;
+      color: #fff;
+      font-weight: 700;
+      position: relative;
+      top: 0.5rem;
+      margin: 0 0 0 13px;
+      padding: 0px 10px;
+      background: #0D0D28;
+      width: fit-content;
+    }
+    .login-btn{
+      width: 100%;
+      /* height: 100%; */
+      background-color: rgb(31, 31, 241);
+      color: #fff;
+      /* color: #000; */
+      border: none;
+      border-radius: 5px;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .btn:hover{
+      background-color: rgb(6, 6, 224);
+    }
+    .coolinput input[type=text].input {
+      padding: 1.4vw 10px;
+      font-size: 0.75rem;
+      border: 2px #818CF8 solid;
+      border-radius: 5px;
+      background: #e8e8e8;
+      font-size: 1rem;
+      border-radius: 10px;
+      background:none ;
+      font-weight: 400;
+      line-height: 22.5px;
+      letter-spacing: -0.5px;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+    
+    .coolinput input[type=text].input:focus {
+      outline: none;
+    }
+
+
+
+
+@media screen and (width > 300px) and (width < 768px) {
+
+  .form-container form{
+    width: 90%;
+  }.form-group{
+    gap: 3vw;
+  }
+  .coolinput label.text{
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .coolinput input[type=text].input{
+    width: 100%;
+    padding: 4.5vw 4vw;
+    margin-top: 1vw;
+    font-size: 14px;
+  }.form-container form {
+    height: 85%;
+  }
+  .login-btn{
+    width: 100%;
+    padding:5vw 3vw;
+    font-size: 5vw;
+    font-weight: 500;
+    margin-top: 5vw;
+    border-radius: 10px;
+
+  }
+}
